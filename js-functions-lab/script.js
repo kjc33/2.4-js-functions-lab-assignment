@@ -43,6 +43,21 @@ console.log(IsCharAVowelResult);
 
 // Q4. Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]); would return 11.
 
+// Q4 Solution
+
+const arr = [2, 4, 5];
+let sum = 0;
+
+function sumArray(myNums) {
+  myNums.forEach((item) => {
+    sum += item;
+  });
+  return sum;
+}
+
+let sumArrayResult = sumArray(arr);
+console.log(sumArrayResult);
+
 // Q5. Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
 
 // Q6. Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
