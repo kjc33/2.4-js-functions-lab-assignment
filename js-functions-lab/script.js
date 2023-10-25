@@ -10,10 +10,25 @@ function maxOfTwoNumbers(num1, num2) {
   }
 }
 
-let result = maxOfTwoNumbers(12, 20);
-console.log(result);
+let resultMaxOfTwo = maxOfTwoNumbers(12, 20);
+console.log(resultMaxOfTwo);
 
 // Q2. Define a function, as a function expression, maxOfThree that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
+
+// Q2 Solution
+
+function maxOfThree(num1, num2, num3) {
+  if (num1 > num2 && num1 > num3) {
+    return num1;
+  } else if (num2 > num1 && num2 > num3) {
+    return num2;
+  } else {
+    return num3;
+  }
+}
+
+let resultMaxOfThree = maxOfThree(200, 100, 80);
+console.log(resultMaxOfThree);
 
 // Q3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
 
