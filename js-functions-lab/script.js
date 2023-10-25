@@ -88,15 +88,25 @@ console.log(numArgsResult);
 // Q7 Solution
 
 function reverseString(myString) {
-    let splitString = myString.split("");
-    let reverseArray = splitString.reverse();
-    let joinArray = reverseArray.join("");
-    return joinArray;
-  }
-  
-  let reverseStringResult = reverseString("rockstar");
-  console.log(reverseStringResult);
+  let splitString = myString.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  return joinArray;
+}
+
+let reverseStringResult = reverseString("rockstar");
+console.log(reverseStringResult);
 
 // Q8. Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
+
+// Q8 Solution
+
+const longestStringInArray = function longestString(myStrings) {
+  return myStrings.sort(function (smallString, bigString) {
+    return bigString.length - smallString.length;
+  })[0].length;
+};
+
+console.log(longestStringInArray(["Hello, World!", "This is a long string, bruh!", "Dude, this is an even longer string!"]));
 
 // Q9. Define a function, as a function declaration, stringsLongerThan that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
