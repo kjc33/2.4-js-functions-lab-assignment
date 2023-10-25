@@ -1,5 +1,18 @@
 // Q1. Define a function, as a function declaration, maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. If they are the same, return that number. Use the if-else construct or a ternary expression - the Math.max method is not allowed.
 
+// Q1 Solution
+
+function maxOfTwoNumbers(num1, num2) {
+  if (num1 >= num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+let result = maxOfTwoNumbers(12, 20);
+console.log(result);
+
 // Q2. Define a function, as a function expression, maxOfThree that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
 
 // Q3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
@@ -15,4 +28,3 @@
 // Q8. Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
 
 // Q9. Define a function, as a function declaration, stringsLongerThan that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
-
