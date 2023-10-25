@@ -17,7 +17,7 @@ console.log(resultMaxOfTwo);
 
 // Q2 Solution
 
-function maxOfThree(num1, num2, num3) {
+const maxOfThreeNums = function maxOfThree(num1, num2, num3) {
   if (num1 > num2 && num1 > num3) {
     return num1;
   } else if (num2 > num1 && num2 > num3) {
@@ -25,9 +25,9 @@ function maxOfThree(num1, num2, num3) {
   } else {
     return num3;
   }
-}
+};
 
-let resultMaxOfThree = maxOfThree(200, 100, 80);
+let resultMaxOfThree = maxOfThreeNums(200, 100, 80);
 console.log(resultMaxOfThree);
 
 // Q3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
@@ -45,17 +45,16 @@ console.log(IsCharAVowelResult);
 
 // Q4 Solution
 
-const arr = [2, 4, 5];
 let sum = 0;
 
-function sumArray(myNums) {
+const arraySummation = function sumArray(myNums) {
   myNums.forEach((item) => {
     sum += item;
   });
   return sum;
-}
+};
 
-let sumArrayResult = sumArray(arr);
+let sumArrayResult = arraySummation([2, 4, 5]);
 console.log(sumArrayResult);
 
 // Q5. Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product of those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
