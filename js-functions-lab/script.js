@@ -32,6 +32,15 @@ console.log(resultMaxOfThree);
 
 // Q3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
 
+// Q3 Solution
+
+function isCharAVowel(char) {
+  return char === "a" || char === "e" || char === "i" || char === "o" || char === "u";
+}
+
+let IsCharAVowelResult = isCharAVowel("e");
+console.log(IsCharAVowelResult);
+
 // Q4. Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]); would return 11.
 
 // Q5. Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
