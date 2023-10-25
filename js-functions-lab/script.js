@@ -58,7 +58,22 @@ function sumArray(myNums) {
 let sumArrayResult = sumArray(arr);
 console.log(sumArrayResult);
 
-// Q5. Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
+// Q5. Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product of those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
+
+// Q5 Solution
+
+const myArr = [2, 4, 5];
+let multiply = 1;
+
+function multiplyArray(myArr) {
+  myArr.forEach((item) => {
+    multiply *= item;
+  });
+  return multiply;
+}
+
+let multiplyArrayResult = multiplyArray(myArr);
+console.log(multiplyArrayResult);
 
 // Q6. Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
 
